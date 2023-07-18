@@ -327,6 +327,9 @@ class BtsModel(nn.Module):
         self.decoder = bts(params, self.encoder.feat_out_channels, params.bts_size)
 
     def forward(self, x, focal):
+        print("From Model file:::")
+        print("X is ::",x)
+        print("Focal is ::",focal)
         skip_feat = self.encoder(x)
         return self.decoder(skip_feat, focal)
     

@@ -34,6 +34,7 @@ def download_file_from_google_drive(id, destination):
 
 
 if __name__ == "__main__":
+    print("Reached somewhere!!!!")
     import sys
     if len(sys.argv) != 3:
         print("Usage: python google_drive.py drive_file_id destination_file_path")
